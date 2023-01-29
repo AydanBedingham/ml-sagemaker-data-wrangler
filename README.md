@@ -1,29 +1,17 @@
-# README #
+# AWS Data Wrangler
 
-This README would normally document whatever steps are necessary to get your application up and running.
+AWS SageMaker Data Wrangler flow used to perform exploratory Data Analysis (EDA).
 
-### What is this repository for? ###
+* Read contents of cardio.csv data uploaded to S3 (Cardiovascular Disease dataset - https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset).
+* Plot the histogram for the height column.
+* Plot the scatterplot between the height and weight.
+* Plot the correlation matrix between features.
+* Drop the ID column
+* Create a custom formula to convert age column from days to years. Round the age to the nearest integer
+* Plot the histogram for the newly created age column
+* Generate a summary table and list the average age value
+* Sort the dataframe according the age column in an ascending order 
+* Generate a bias report for the cholesterol column 
+* Scale the weight, height, ap_lo and ap_hi using min max scaler
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+![Diagram](diagram.png)
